@@ -1,8 +1,8 @@
 import React from 'react';
-import './Login.css';
+import './Login.css'; // Use the same CSS as the login component
 import logo from './img/Coffee Leaf Scanner Logo 2 1.png'; // Adjust the path as necessary
 
-function Login() {
+function Register() {
   return (
     <div className="app-container">
       <div className="header">
@@ -11,19 +11,23 @@ function Login() {
       </div>
       <div className="login-container">
         <div className="login-box">
-          <h2>Login</h2>
+          <h2>Register</h2>
           <form>
-            <h3>Email or Username</h3>
+            <h3>Username</h3>
+            <input type="text" className="login-input" />
+            <h3>Email</h3>
             <input type="text" className="login-input" />
             <h3>Password</h3>
             <input type="password" className="login-input" />
-            <button type="submit" className="login-button">Login</button>
+            <h3>Confirm Password</h3>
+            <input type="password" className="login-input" />
+            <button type="submit" className="login-button">Register</button>
           </form>
-          <p>Don't have an account? <a href="/Register">Register</a></p>
+          <p>Already have an account? <a href="/">Login</a></p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Register;
