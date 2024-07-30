@@ -1,12 +1,17 @@
 import React from 'react';
 import './Login.css'; // Use the same CSS as the login component
-import logo from './img/Coffee Leaf Scanner Logo 2 1.png'; // Adjust the path as necessary
+import logo from './img/CoffeeByteLogo.png'; // Adjust the path as necessary
 
 function Register() {
   return (
     <div className="app-container">
       <div className="header">
-        <img src={logo} alt="CoffeeByte Logo" className="logo" />
+      <img 
+          src={logo} 
+          alt="CoffeeByte Logo" 
+          className="logo" 
+          style={{ width: '100px', height: 'auto' }} // Inline style for testing
+        />
         <h1>CoffeeByte</h1>
       </div>
       <div className="login-container">

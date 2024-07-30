@@ -1,0 +1,160 @@
+/* src/UserManagement.css */
+
+.user-management-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Example gradient */
+}
+
+.sidebar {
+    background: linear-gradient(135deg, #000000, #000000);
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: left; /* Align text to the left */
+}
+
+.management-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: text-decoration 0.3s, background-color 0.3s;
+}
+
+.sidebar nav ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight highlight on hover */
+}
+
+.sidebar nav ul li.active {
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+    border-radius: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-welcome-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and welcome message */
+}
+
+.welcome-message {
+    text-align: left;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-management {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-management h2 {
+    margin-top: 0;
+}
+
+.search-add {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-user-button {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-user-button:hover {
+    background-color: #27ae60;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #34495e;
+    color: white;
+}
+
+.user-table td button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-table td button:hover {
+    background-color: #2980b9;
+}
