@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/user-management" element={<UserManagement />} /> {/* Add this route */}
+        <Route path="/user-management/*" element={<UserManagement />} /> {/* Note the wildcard for nested routes */}
       </Routes>
     </Router>
   );

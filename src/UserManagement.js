@@ -1,22 +1,81 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Sidebar from './Sidebar';
 import './UserManagement.css';
-import logo from './img/CoffeeByteLogo.png'; // Adjust the path as necessary
+import logo from './img/CoffeeByteLogo.png';
+
+// Placeholder components for each page
+function User() {
+  return (
+    <div>
+      <div className="search-add">
+        <input type="text" className="search-input" placeholder="Search here..." />
+        <button className="add-user-button">Add User</button>
+      </div>
+      <table className="user-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Create Date</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maria Anit</td>
+            <td>maria@gmail.com</td>
+            <td>06-05-24</td>
+            <td>Member</td>
+            <td>
+              <button>Edit</button>
+              <button>Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Mark Gipantos</td>
+            <td>mark12@yahoo.com</td>
+            <td>06-05-24</td>
+            <td>Member</td>
+            <td>
+              <button>Edit</button>
+              <button>Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Marlon Domingo</td>
+            <td>marlod@gmail.com</td>
+            <td>06-05-24</td>
+            <td>Admin</td>
+            <td>
+              <button>Edit</button>
+              <button>Delete</button>
+            </td>
+          </tr>
+          {/* Add more rows as needed */}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function Content() {
+  return <div>Content Management Page</div>;
+}
+
+function Activity() {
+  return <div>Activity Management Page</div>;
+}
+
+function Settings() {
+  return <div>Settings Management Page</div>;
+}
 
 function UserManagement() {
   return (
     <div className="user-management-container">
-      <aside className="sidebar">
-        <h1>CoffeeByte</h1>
-        <div className="management-title">Management</div>
-        <nav>
-          <ul>
-            <li className="active">User</li>
-            <li>Content</li>
-            <li>Activity</li>
-            <li>Settings</li>
-          </ul>
-        </nav>
-      </aside>
+      <Sidebar />
       <main className="main-content">
         <header>
           <div className="logo-welcome-container">
@@ -32,36 +91,12 @@ function UserManagement() {
           </div>
         </header>
         <section className="user-management">
-          <h2>User Management</h2>
-          <div className="search-add">
-            <input type="text" placeholder="Search here..." className="search-input" />
-            <button className="add-user-button">Add User</button>
-          </div>
-          <table className="user-table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Create Date</th>
-                <th>Role</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {/* Sample Data */}
-              <tr>
-                <td>Maria Anit</td>
-                <td>maria@gmail.com</td>
-                <td>06-05-24</td>
-                <td>Member</td>
-                <td>
-                  <button>Edit</button>
-                  <button>Delete</button>
-                </td>
-              </tr>
-              {/* Add more rows as needed */}
-            </tbody>
-          </table>
+          <Routes>
+            <Route path="user" element={<User />} />
+            <Route path="content" element={<Content />} />
+            <Route path="activity" element={<Activity />} />
+            <Route path="settings" element={<Settings />} />
+          </Routes>
         </section>
       </main>
     </div>

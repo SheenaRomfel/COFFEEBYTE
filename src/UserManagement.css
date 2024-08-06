@@ -1,160 +1,145 @@
-/* src/UserManagement.css */
-
 .user-management-container {
     display: flex;
     height: 100vh;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Example gradient */
-}
-
-.sidebar {
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #000000, #000000);
+  }
+  
+  .sidebar {
+    background-color: #34495e;
     padding: 20px;
     width: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-}
-
-.sidebar h1 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .sidebar h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #fff;
-    text-align: left; /* Align text to the left */
-}
-
-.management-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.sidebar nav ul {
+  }
+  
+  .sidebar nav ul {
     list-style: none;
     padding: 0;
-}
-
-.sidebar nav ul li {
+  }
+  
+  .sidebar nav ul li {
     margin: 10px 0;
-    color: #fff;
+  }
+  
+  .sidebar nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
     padding: 10px;
+    display: block;
     border-radius: 5px;
-    transition: text-decoration 0.3s, background-color 0.3s;
-}
-
-.sidebar nav ul li:hover {
+  }
+  
+  .sidebar nav ul li a:hover {
     text-decoration: underline;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1); /* Slight highlight on hover */
-}
-
-.sidebar nav ul li.active {
-    font-weight: bold;
-}
-
-.main-content {
+  }
+  
+  .main-content {
     flex: 1;
     padding: 20px;
     background-color: #ecf0f1;
-    overflow-y: auto;
-    border-radius: 50px;
-}
-
-header {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.logo-welcome-container {
+  }
+  
+  .logo-welcome-container {
     display: flex;
     align-items: center;
-}
-
-.logo {
-    width: 100px; /* Adjust width as needed */
-    height: auto;
-    margin-right: 10px; /* Space between logo and welcome message */
-}
-
-.welcome-message {
-    text-align: left;
-}
-
-.user-info {
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .welcome-message {
+    color: #2c3e50;
+  }
+  
+  .user-info {
+    color: #2c3e50;
     text-align: right;
-}
-
-.user-management {
+  }
+  
+  .user-management {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.user-management h2 {
-    margin-top: 0;
-}
-
-.search-add {
+  }
+  
+  .search-add {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-}
-
-.search-input {
+  }
+  
+  .search-input {
     width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.add-user-button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .add-user-button {
     padding: 10px 20px;
     background-color: #2ecc71;
     color: white;
     border: none;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.add-user-button:hover {
+  }
+  
+  .add-user-button:hover {
     background-color: #27ae60;
-}
-
-.user-table {
+  }
+  
+  .user-table {
     width: 100%;
     border-collapse: collapse;
-}
-
-.user-table th,
-.user-table td {
+  }
+  
+  .user-table th,
+  .user-table td {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: left;
-}
-
-.user-table th {
+  }
+  
+  .user-table th {
     background-color: #34495e;
     color: white;
-}
-
-.user-table td button {
+  }
+  
+  .user-table td {
+    border-radius: 5px;
+  }
+  
+  .user-table td button {
     padding: 5px 10px;
     margin-right: 5px;
     background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.user-table td button:hover {
-    background-color: #2980b9;
-}
+  }
+  
