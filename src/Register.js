@@ -16,17 +16,17 @@ function Register() {
       </div>
       <div className="login-container">
         <div className="login-box">
-          <h2>Register</h2>
+          <div class="login-title">Register</div>
           <form>
-            <h3>Username</h3>
-            <input type="text" className="login-input" />
-            <h3>Email</h3>
-            <input type="text" className="login-input" />
-            <h3>Password</h3>
-            <input type="password" className="login-input" />
-            <h3>Confirm Password</h3>
-            <input type="password" className="login-input" />
-            <button type="submit" className="login-button">Register</button>
+            <div class="login-box-text">Username</div>
+            <input type="text" class="login-input" />
+            <div class="login-box-text">Email</div>
+            <input type="text" class="login-input" />
+            <div class="login-box-text">Password</div>
+            <input type="password" class="login-input" />
+            <div class="login-box-text">Confirm Password</div>
+            <input type="password" class="login-input" />
+            <button type="submit" class="login-button">Register</button>
           </form>
           <p>Already have an account? <a href="/">Login</a></p>
         </div>
