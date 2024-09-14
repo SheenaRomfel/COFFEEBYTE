@@ -34,7 +34,7 @@ function Login() {
             <input type="text" class="login-input" />
             <div class="login-box-text">Password</div>
             <input type="password" class="login-input" />
-            <button type="submit" class="login-button">Login</button>
+            <button type="submit" class="login-button"><a href="/Settings">Login</a></button>
           </form>
           <p>Don't have an account? <a href="/Register">Register</a></p>
         </div>

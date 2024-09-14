@@ -1,67 +1,122 @@
 /* src/Login.css */
 
 .app-container {
-    @apply relative h-screen bg-black bg-[url('./img/bgimage.png')] bg-no-repeat bg-cover bg-center bg-fixed flex flex-col justify-center items-center;
+    @apply 
+    relative 
+    h-screen 
+    bg-black 
+    bg-[url('./img/bgimage.png')] 
+    bg-no-repeat 
+    bg-cover 
+    bg-center 
+    bg-fixed 
+    flex 
+    flex-col 
+    justify-center 
+    items-center
 }
 
 .header {
-    @apply sm:mx-auto sm:w-full sm:max-w-sm text-3xl absolute top-[10px] left-[10px] flex items-center text-white;
+    @apply 
+    sm:mx-auto 
+    sm:w-full 
+    sm:max-w-sm 
+    text-3xl 
+    absolute 
+    top-[10px] 
+    left-[10px] 
+    flex 
+    items-center 
+    text-white
 }
 
 .logo {
-    width: 150px; /* Adjust width as needed */
-    height: auto;
-    margin-right: 10px;
+    @apply 
+    w-36 
+    h-auto mr-3
 }
 
 .login-container {
-    @apply flex justify-center items-center p-7 bg-slate-50 rounded-3xl shadow-sm m-12 w-auto h-auto;
+    @apply 
+    flex 
+    justify-center 
+    items-center 
+    p-7 
+    bg-slate-50 
+    rounded-3xl 
+    shadow-sm 
+    m-12 
+    w-auto 
+    h-auto
 }
 
 .full-width-container {
-    width: 100%; /* Full width for Register component */
+    @apply 
+    w-full
 }
 
 .login-box {
-    @apply text-center w-auto;
+    @apply 
+    text-center 
+    w-auto
 }
 
 .login-title {
-    @apply mb-5 text-[#3E735B] text-2xl;
+    @apply 
+    mb-5 
+    text-[#3E735B] 
+    text-2xl
 }
 
 .login-box-text {
-    @apply my-2 text-xs text-left text-[#3E735B];
+    @apply 
+    my-2 
+    text-xs 
+    text-left 
+    text-[#3E735B]
 }
 
 .login-input {
-    @apply w-full p-1 my-2 border-b-[1px] border-[#3E735B] text-base outline-none bg-slate-50
+    @apply 
+    w-full 
+    p-1 
+    my-2 
+    border-b-[1px] 
+    border-[#3E735B] 
+    text-base 
+    outline-none 
+    bg-slate-50
 }
 
 .login-button {
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0;
-    background-color: #3E735B;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
+    @apply
+    w-full
+    p-2
+    my-5
+    bg-[#3E735B]
+    text-white
+    border-none
+    rounded-3xl
+    cursor-pointer
+    text-base
 }
 
 .login-button:hover {
-    @apply bg-[#2C5C44]; /* Slightly different shade for hover */
+    @apply 
+    bg-[#2C5C44] /* Slightly different shade for hover */
 }
 
 p {
-    @apply text-sm;
+    @apply 
+    text-sm
 }
 
 a {
-    @apply text-[#3E735B];
+    @apply 
+    text-[#3E735B]
 }
 
 a:hover {
-    @apply underline;
+    @apply 
+    underline
 }
