@@ -5,7 +5,7 @@
     background: linear-gradient(135deg, #000000, #000000);
   }
   
-  .sidebar {
+  /*.sidebar {
     background-color: #34495e;
     padding: 20px;
     width: 250px;
@@ -13,7 +13,7 @@
     flex-direction: column;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
+  }*/
   
   .sidebar h1 {
     font-size: 24px;
