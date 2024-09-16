@@ -63,17 +63,20 @@
   }
   
   .logo {
-    width: 50px;
-    margin-right: 10px;
+    @apply 
+    w-12
+    mr-2
   }
   
   .welcome-message {
-    color: #2c3e50;
+    @apply 
+    text-[#2c3e50]
   }
   
   .user-info {
-    color: #2c3e50;
-    text-align: right;
+    @apply
+    text-[#2c3e50]
+    text-right
   }
   
   .user-management {
