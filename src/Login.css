@@ -94,15 +94,20 @@
     p-2
     my-5
     bg-[#3E735B]
-    text-white
     border-none
     rounded-3xl
     cursor-pointer
     text-base
 }
 
+.login-button a {
+    @apply
+    text-white
+}
+
 .login-button:hover {
     @apply 
+    text-white
     bg-[#2C5C44] /* Slightly different shade for hover */
 }
 
